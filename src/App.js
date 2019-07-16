@@ -22,7 +22,7 @@ const App = () => {
   const [currentContent, setTab] = useState("home");
   return (
     <div className="App">
-      <Navbar setTab={setTab} />
+      <Navbar setTab={setTab} currentContent={currentContent} />
       <Switch currentContent={currentContent} />
       <Footer />
     </div>

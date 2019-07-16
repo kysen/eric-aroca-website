@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .navbar-logo {
+      @include no-highlight();
+    }
     .navbar-right {
       display: flex;
       flex-direction: column;
@@ -39,6 +43,7 @@
         align-items: center;
         justify-content: space-around;
         .navbar-tab-item {
+          @include no-highlight();
           border-radius: 2px;
           cursor: pointer;
           padding: 1em;
@@ -49,6 +54,10 @@
             background-color: #f0f0f0;
             color: $baby-blue;
           }
+        }
+        .navbar-tab-item-active {
+          background-color: #f0f0f0;
+          color: $baby-blue;
         }
       }
     }
