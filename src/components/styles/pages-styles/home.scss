@@ -1,0 +1,44 @@
+.home-container {
+  .silent-background-video-wrapper {
+    .silent-video {
+      width: 100%;
+    }
+  }
+  .power-words {
+    padding-top: 0.3em;
+    padding-bottom: 1.5em;
+    font-size: 2em;
+    color: rgb(110, 110, 110);
+  }
+  .demo-video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 700px;
+    }
+    .watch-video-button {
+      cursor: pointer;
+      position: absolute;
+      padding: 1em;
+      border-radius: 5px;
+
+      font-size: 1.3em;
+      background-color: rgb(73, 73, 73);
+      color: white;
+    }
+  }
+}
+
+.modal-video {
+  background-color: rgba(0, 0, 0, 0.89);
+  cursor: default;
+}
+
+.modal-video-close-btn {
+  cursor: pointer;
+}
+
+.modal-video-body {
+  max-width: 70%;
+}

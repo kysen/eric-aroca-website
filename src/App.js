@@ -7,25 +7,26 @@
 // Add pics to gallery
 // About me as separate tab
 
-import React from "react";
+import React, { useState } from "react";
 import "./components/styles/main.scss";
 
 import Navbar from "./components/navbar";
-// import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
-// import Navbar from "./components/navbar";
+import Switch from "./components/switch";
 
 import Icons from "./helpers/icons";
 
-function App() {
+const App = () => {
   Icons();
+  const [currentContent, setTab] = useState("home");
   return (
     <div className="App">
-      <Navbar />
-      {/* <Content /> */}
-      {/* <Footer /> */}
+      <Navbar setTab={setTab} />
+      <Switch currentContent={currentContent} />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

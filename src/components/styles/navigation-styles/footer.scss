@@ -1,0 +1,24 @@
+.footer-container {
+  height: 500px;
+  padding: 20px;
+
+  background-color: rgb(48, 54, 78);
+  color: rgb(206, 206, 206);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .copyright-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .copyright-icon {
+      font-size: 0.8em;
+    }
+    .copyright-text {
+      font-size: 1.05em;
+      padding-left: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}
