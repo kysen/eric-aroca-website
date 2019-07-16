@@ -11,6 +11,9 @@ import React from "react";
 import "./components/styles/main.scss";
 
 import Navbar from "./components/navbar";
+// import Navbar from "./components/navbar";
+
+// import Navbar from "./components/navbar";
 
 import Icons from "./helpers/icons";
 
@@ -19,6 +22,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      {/* <Content /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
