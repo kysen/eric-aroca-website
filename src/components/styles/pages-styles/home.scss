@@ -26,8 +26,60 @@
       font-size: 1.3em;
       background-color: rgb(73, 73, 73);
       color: white;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        background-color: $baby-blue;
+      }
     }
   }
+  .divider {
+    height: 2px;
+    width: 100%;
+    margin: 40px 0px;
+
+    display: flex;
+    justify-content: center;
+    .line {
+      width: 90%;
+      background-color: $faded-baby-blue;
+    }
+  }
+  .three-column-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .three-column-wrapper {
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      .column-wrapper {
+        img {
+          width: 100%;
+          padding: 5px;
+          border: 2px solid rgba(128, 128, 128, 0.123);
+        }
+        .column-title {
+          text-align: start;
+          padding-top: 20px;
+          font-size: 2em;
+          font-weight: 600;
+        }
+        .column-paragraph {
+          padding-top: 10px;
+          font-size: 1.2em;
+          text-align: start;
+        }
+      }
+    }
+  }
+}
+
+.section-title {
+  font-size: 3em;
+  margin-bottom: 1em;
 }
 
 .modal-video {

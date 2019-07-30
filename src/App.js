@@ -7,6 +7,8 @@
 // Add pics to gallery
 // About me as separate tab
 
+// just finished making logos now time to add them to project
+
 import React, { useState } from "react";
 import "./components/styles/main.scss";
 
