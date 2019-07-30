@@ -31,6 +31,7 @@
         .social-media-link {
           cursor: pointer;
           color: $faded-baby-blue;
+          transition: 0.2s ease-in-out;
           &:hover {
             color: $baby-blue;
           }
@@ -50,6 +51,7 @@
 
           font-size: 1.2em;
           color: $grey;
+          transition: 0.2s ease-in-out;
           &:hover {
             background-color: #f0f0f0;
             color: $baby-blue;

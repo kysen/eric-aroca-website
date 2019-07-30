@@ -11,13 +11,29 @@ import leftColumnImage from "../../images/gallery/bad-quality/IMG_0970.jpg";
 // import middleColumnImage from "../../images/gallery/bad-quality/IMG_0970.jpg";
 // import rightColumnImage from "../../images/gallery/bad-quality/IMG_3441.JPG";
 
+import absolute from "../../images/past-work-logos/absolute.png";
+import caveman from "../../images/past-work-logos/caveman.png";
+import dendreon from "../../images/past-work-logos/dendreon.png";
+import everest from "../../images/past-work-logos/everest.png";
+import intermountain from "../../images/past-work-logos/intermountain.png";
+import jeppson from "../../images/past-work-logos/jeppson.png";
+import legacy from "../../images/past-work-logos/legacy.png";
+import lobos from "../../images/past-work-logos/lobos.jpg";
+import pisa from "../../images/past-work-logos/pisa.png";
+import salem from "../../images/past-work-logos/salem.png";
+import samsung from "../../images/past-work-logos/samsung.png";
+import squire from "../../images/past-work-logos/squire.png";
+import uapcs from "../../images/past-work-logos/uapcs.jpg";
+import uassp from "../../images/past-work-logos/uassp.jpg";
+import uvu from "../../images/past-work-logos/uvu.png";
+
 const Home = () => {
   const [youtubeOpen, setYoutubeOpen] = useState(false);
 
   return (
     <div className="home-container">
       <div className="silent-background-video-wrapper">
-        <img className="silent-video" src={eric} alt="" />
+        <img className="silent-video" src={eric} alt="silent-vid" />
       </div>
       <div className="power-words">Keynote Speaker | Thing | Thing</div>
       <div className="demo-video-section">
@@ -77,6 +93,38 @@ const Home = () => {
 
       <div className="recent-clients-section">
         <div className="section-title">Recent Clients</div>
+
+        <div className="logo-wrapper">
+          <img src={absolute} alt="past work logo" />
+
+          <img src={caveman} alt="past work logo" />
+
+          <img src={dendreon} alt="past work logo" />
+
+          <img src={everest} alt="past work logo" />
+
+          <img src={intermountain} alt="past work logo" />
+
+          <img src={jeppson} alt="past work logo" />
+
+          <img src={legacy} alt="past work logo" />
+
+          <img src={lobos} alt="past work logo" />
+
+          <img src={pisa} alt="past work logo" />
+
+          <img src={salem} alt="past work logo" />
+
+          <img src={samsung} alt="past work logo" />
+
+          <img src={squire} alt="past work logo" />
+
+          <img src={uapcs} alt="past work logo" />
+
+          <img src={uassp} alt="past work logo" />
+
+          <img src={uvu} alt="past work logo" />
+        </div>
       </div>
     </div>
   );
