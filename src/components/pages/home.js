@@ -95,35 +95,74 @@ const Home = () => {
         <div className="section-title">Recent Clients</div>
 
         <div className="logo-wrapper">
-          <img src={absolute} alt="past work logo" />
+          <img
+            className="logo rectangular absolute"
+            src={absolute}
+            alt="past work logo"
+          />
+          <img
+            className="logo circular lobos"
+            src={lobos}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular intermountain"
+            src={intermountain}
+            alt="past work logo"
+          />
+          <img className="logo circular uvu" src={uvu} alt="past work logo" />
+          <img
+            className="logo rectangular jeppson"
+            src={jeppson}
+            alt="past work logo"
+          />
+          <img
+            className="logo circular caveman"
+            src={caveman}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular salem"
+            src={salem}
+            alt="past work logo"
+          />
+          <img
+            className="logo circular uassp"
+            src={uassp}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular samsung"
+            src={samsung}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular squire"
+            src={squire}
+            alt="past work logo"
+          />
 
-          <img src={caveman} alt="past work logo" />
-
-          <img src={dendreon} alt="past work logo" />
-
-          <img src={everest} alt="past work logo" />
-
-          <img src={intermountain} alt="past work logo" />
-
-          <img src={jeppson} alt="past work logo" />
-
-          <img src={legacy} alt="past work logo" />
-
-          <img src={lobos} alt="past work logo" />
-
-          <img src={pisa} alt="past work logo" />
-
-          <img src={salem} alt="past work logo" />
-
-          <img src={samsung} alt="past work logo" />
-
-          <img src={squire} alt="past work logo" />
-
-          <img src={uapcs} alt="past work logo" />
-
-          <img src={uassp} alt="past work logo" />
-
-          <img src={uvu} alt="past work logo" />
+          <img
+            className="logo circular legacy"
+            src={legacy}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular dendreon"
+            src={dendreon}
+            alt="past work logo"
+          />
+          <img className="logo circular pisa" src={pisa} alt="past work logo" />
+          <img
+            className="logo circular uapcs"
+            src={uapcs}
+            alt="past work logo"
+          />
+          <img
+            className="logo rectangular everest"
+            src={everest}
+            alt="past work logo"
+          />
         </div>
       </div>
     </div>

@@ -75,6 +75,32 @@
       }
     }
   }
+
+  .recent-clients-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .logo-wrapper {
+      width: 80%;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .logo {
+        margin: 5px;
+      }
+      .samsung {
+        height: 5em;
+      }
+      .dendreon {
+        height: 6em;
+      }
+    }
+  }
 }
 
 .section-title {
