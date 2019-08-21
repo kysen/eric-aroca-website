@@ -1,5 +1,4 @@
 .footer-container {
-  height: 500px;
   padding: 20px;
 
   background-color: rgb(48, 54, 78);
@@ -8,6 +7,41 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+
+  .contact-info-wrapper {
+    display: flex;
+
+    img {
+      height: 13em;
+      padding: 25px;
+    }
+
+    .contact-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      padding: 40px;
+
+      font-size: 1.4em;
+
+      div {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 4px;
+        &:hover {
+          color: $faded-baby-blue;
+        }
+      }
+
+      .contact-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+
   .copyright-wrapper {
     display: flex;
     align-items: center;

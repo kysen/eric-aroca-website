@@ -6,6 +6,7 @@ import {
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 const Icons = () => {
@@ -16,7 +17,10 @@ const Icons = () => {
     faPinterest,
     faYoutube,
 
-    faCopyright
+    faCopyright,
+
+    faPhone,
+    faEnvelope
   );
 };
 

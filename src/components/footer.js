@@ -2,9 +2,29 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import circularHeadshot from "../images/self-pictures/headshot-small-circle.png";
+
 const Footer = () => {
   return (
     <div className="footer-container">
+      <div className="contact-info-wrapper">
+        <div className="contact-left">
+          <div>
+            <FontAwesomeIcon className="contact-icon" icon={["fas", "phone"]} />
+            801-368-5266
+          </div>
+          <div>
+            <FontAwesomeIcon
+              className="contact-icon"
+              icon={["fas", "envelope"]}
+            />
+            live-thelife@EricAroca.com
+          </div>
+          {/* <div>meeting planner</div> */}
+        </div>
+
+        <img src={circularHeadshot} alt="heashot" />
+      </div>
       <div className="copyright-wrapper">
         <FontAwesomeIcon
           className="copyright-icon"

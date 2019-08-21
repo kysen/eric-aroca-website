@@ -11,19 +11,46 @@ const Navbar = props => {
         <img className="navbar-logo" src={ericLogo} alt="" />
         <div className="navbar-right">
           <div className="social-media-links-wrapper">
-            <div className="social-media-link">
+            <div
+              className="social-media-link"
+              onClick={() =>
+                (window.location = "https://www.facebook.com/earoca1")
+              }
+            >
               <FontAwesomeIcon icon={["fab", "facebook-f"]} />
             </div>
-            <div className="social-media-link">
+            <div
+              className="social-media-link"
+              onClick={() =>
+                (window.location = "https://twitter.com/arocaeric")
+              }
+            >
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </div>
-            <div className="social-media-link">
+            <div
+              className="social-media-link"
+              onClick={() =>
+                (window.location =
+                  "https://www.instagram.com/ericarocalivethelife")
+              }
+            >
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </div>
-            <div className="social-media-link">
+            <div
+              className="social-media-link"
+              onClick={() =>
+                (window.location = "https://www.pinterest.com/earoca15/")
+              }
+            >
               <FontAwesomeIcon icon={["fab", "pinterest"]} />
             </div>
-            <div className="social-media-link">
+            <div
+              className="social-media-link"
+              onClick={() =>
+                (window.location =
+                  "https://www.youtube.com/channel/UCSKT4yb1nV5YTK_AauaeC_A")
+              }
+            >
               <FontAwesomeIcon icon={["fab", "youtube"]} />
             </div>
           </div>
@@ -44,7 +71,7 @@ const Navbar = props => {
             >
               About
             </div>
-            <div
+            {/* <div
               className={`navbar-tab-item ${
                 props.currentContent === "contact"
                   ? "navbar-tab-item-active"
@@ -53,7 +80,7 @@ const Navbar = props => {
               onClick={() => props.setTab("contact")}
             >
               Contact
-            </div>
+            </div> */}
             <div
               className={`navbar-tab-item ${
                 props.currentContent === "meetingPlanner"
