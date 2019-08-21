@@ -1,15 +1,12 @@
-// TODO
-// make youtube component pop up on screen
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 
 import headShot from "../../images/self-pictures/headshot-large.jpg";
 import eric from "../../images/gallery/eric.jpg";
 
-// import byBook from "../../images/book/by-book.jpg";
-import leftColumnImage from "../../images/gallery/bad-quality/IMG_0970.jpg";
-// import middleColumnImage from "../../images/gallery/bad-quality/IMG_0970.jpg";
-// import rightColumnImage from "../../images/gallery/bad-quality/IMG_3441.JPG";
+import book from "../../images/book/book.png";
+import leftColumnImage from "../../images/book/left-book.png";
+import rightColumnImage from "../../images/book/right-book.JPG";
 
 import absolute from "../../images/past-work-logos/absolute.png";
 import caveman from "../../images/past-work-logos/caveman.png";
@@ -35,7 +32,9 @@ const Home = () => {
       <div className="silent-background-video-wrapper">
         <img className="silent-video" src={eric} alt="silent-vid" />
       </div>
-      <div className="power-words">Keynote Speaker | Thing | Thing</div>
+      <div className="power-words">
+        Keynote Speaker | Author | Corporate Coache
+      </div>
       <div className="demo-video-section">
         <img src={headShot} alt="head-shot" />
         <div
@@ -62,27 +61,59 @@ const Home = () => {
 
             <div className="column-title">Keynote Speaker</div>
             <div className="column-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              quisquam porro sint eveniet. Eos soluta consectetur nobis
-              inventore distinctio iure!
+              Everyone has a story to tell. What sets Eric Aroca apart from the
+              rest is an ability to weave inspiration into attention-grabbing
+              speeches that are nothing short of a verbal joyride. Eric uses
+              humor, insight and masterful storytelling skills to captivate his
+              audience. His entertaining and motivating style will inspire your
+              group to live the life they have always imagined.
             </div>
+            <button />
           </div>
           <div className="column-wrapper">
-            <img src={leftColumnImage} alt="Middle Column" />
-            <div className="column-title">title</div>
+            <img
+              src={book}
+              alt="Middle Column"
+              onClick={() =>
+                (window.location =
+                  "https://www.amazon.com/Live-Life-Youve-Always-Imagined/dp/0692630899/")
+              }
+            />
+            <div className="column-title">Author</div>
             <div className="column-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              quisquam porro sint eveniet. Eos soluta consectetur nobis
-              inventore distinctio iure!
+              This book will teach you the principles you need to bridge the gap
+              from your reality and the life you’ve always imagined.
             </div>
+            <div className="column-paragraph">
+              “I have stacks of self-help books on my desk.{" "}
+              <text
+                onClick={() =>
+                  (window.location =
+                    "https://www.amazon.com/Live-Life-Youve-Always-Imagined/dp/0692630899/")
+                }
+              >
+                ‘Live the Life’
+              </text>{" "}
+              is in a class by itself among the rest as my new preferred
+              guidebook to success.” Jason Hewlett, CSP
+            </div>
+            <button
+              onClick={() =>
+                (window.location =
+                  "https://www.amazon.com/Live-Life-Youve-Always-Imagined/dp/0692630899/")
+              }
+            >
+              Buy the Book!
+            </button>
           </div>
           <div className="column-wrapper">
-            <img src={leftColumnImage} alt="Right Column" />
-            <div className="column-title">title</div>
+            <img src={rightColumnImage} alt="Right Column" />
+            <div className="column-title">Corporate Coach</div>
             <div className="column-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              quisquam porro sint eveniet. Eos soluta consectetur nobis
-              inventore distinctio iure!
+              As a Presidents Club Award winner, Eric has performed at elevated
+              levels in the high tech, pharmaceutical and medical device
+              industries. He has had the opportunity to speak and train
+              audiences around the world.
             </div>
           </div>
         </div>

@@ -8,6 +8,9 @@
 // About me as separate tab
 
 // just finished making logos now time to add them to project
+// make each logo a clickable link
+// make social media links work
+// create footer
 
 import React, { useState } from "react";
 import "./components/styles/main.scss";
