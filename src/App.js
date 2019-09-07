@@ -24,7 +24,7 @@ import Icons from "./helpers/icons";
 
 const App = () => {
   Icons();
-  const [currentContent, setTab] = useState("home");
+  const [currentContent, setTab] = useState("recentClients");
   return (
     <div className="App">
       <Navbar setTab={setTab} currentContent={currentContent} />

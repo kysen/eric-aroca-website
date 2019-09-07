@@ -71,16 +71,6 @@ const Navbar = props => {
             >
               About
             </div>
-            {/* <div
-              className={`navbar-tab-item ${
-                props.currentContent === "contact"
-                  ? "navbar-tab-item-active"
-                  : ""
-              }`}
-              onClick={() => props.setTab("contact")}
-            >
-              Contact
-            </div> */}
             <div
               className={`navbar-tab-item ${
                 props.currentContent === "meetingPlanner"
@@ -90,6 +80,16 @@ const Navbar = props => {
               onClick={() => props.setTab("meetingPlanner")}
             >
               Meeting Planner
+            </div>
+            <div
+              className={`navbar-tab-item ${
+                props.currentContent === "recentClients"
+                  ? "navbar-tab-item-active"
+                  : ""
+              }`}
+              onClick={() => props.setTab("recentClients")}
+            >
+              Recent Clients
             </div>
             <div
               className={`navbar-tab-item ${

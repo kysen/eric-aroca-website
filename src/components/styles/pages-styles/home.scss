@@ -6,6 +6,8 @@
       align-items: center;
       .scrolling-item-image {
         width: 100%;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
       }
       .overlapping-text {
         position: absolute;
@@ -147,6 +149,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include no-highlight;
     .logo-wrapper {
       width: 80%;
 
