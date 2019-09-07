@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
+import ImageGallery from "react-image-gallery";
+
+import stageEric from "../../images/scrolling-pictures/stage-eric.jpg";
+import withStudents from "../../images/scrolling-pictures/with-students.png";
+import americanFlag from "../../images/scrolling-pictures/american-flag.png";
 
 import headShot from "../../images/self-pictures/headshot-large.jpg";
-import eric from "../../images/gallery/eric.jpg";
 
 import book from "../../images/book/book.png";
 import leftColumnImage from "../../images/book/left-book.png";
@@ -29,11 +33,78 @@ import uvu from "../../images/past-work-logos/uvu.png";
 const Home = () => {
   const [youtubeOpen, setYoutubeOpen] = useState(false);
 
+  const render1 = () => {
+    return (
+      <div className="scrolling-item">
+        <img
+          className="scrolling-item-image"
+          src={stageEric}
+          alt="silent-vid"
+        />
+        <div className="overlapping-text">
+          <div className="overlapping-title">Eric Aroca</div>
+          <div className="overlapping-sub-title">
+            Inspiring others to Dream more, Learn more, Do more, and Become more
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const render2 = () => {
+    return (
+      <div className="scrolling-item">
+        <img
+          className="scrolling-item-image"
+          src={withStudents}
+          alt="silent-vid"
+        />
+        <div className="overlapping-text">
+          <div className="overlapping-title">Live the Life</div>
+          <div className="overlapping-sub-title">
+            Ignite Your life, fight for it. Live the life you've imagined
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const render3 = () => {
+    return (
+      <div className="scrolling-item">
+        <img
+          className="scrolling-item-image"
+          src={americanFlag}
+          alt="silent-vid"
+        />
+        <div className="overlapping-text">
+          <div className="overlapping-title">Inspire</div>
+          <div className="overlapping-sub-title">
+            Eric Aroca can inspire your group to reach their goals and dreams
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const images = [
+    {
+      thumbnail: stageEric,
+      renderItem: render1
+    },
+    {
+      thumbnail: withStudents,
+      renderItem: render2
+    },
+    {
+      thumbnail: americanFlag,
+      renderItem: render3
+    }
+  ];
+
   return (
     <div className="home-container">
-      <div className="silent-background-video-wrapper">
-        <img className="silent-video" src={eric} alt="silent-vid" />
+      <div className="scrolling-items-wrapper">
+        <ImageGallery items={images} />
       </div>
+
       <div className="power-words">
         Keynote Speaker | Author | Corporate Coache
       </div>

@@ -1,6 +1,7 @@
 @import "./helpers/variables.scss";
 @import "./helpers/mixins.scss";
 @import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 @import "./app.scss";
 
@@ -10,3 +11,4 @@
 
 @import "./pages-styles/home.scss";
 @import "./pages-styles/about.scss";
+@import "./pages-styles/meeting-planner.scss";

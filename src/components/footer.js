@@ -9,7 +9,11 @@ const Footer = () => {
     <div className="footer-container">
       <div className="contact-info-wrapper">
         <div className="contact-left">
-          <div>
+          <div
+            onClick={() => {
+              navigator.clipboard.writeText("8013685266");
+            }}
+          >
             <FontAwesomeIcon className="contact-icon" icon={["fas", "phone"]} />
             801-368-5266
           </div>

@@ -14,9 +14,7 @@
     flex-direction: column;
 
     .about-title {
-      font-size: 3em;
-      font-weight: 600;
-      color: $dark-gray;
+      @include page-title;
     }
     .about-subtitle {
       font-size: 1.8em;
