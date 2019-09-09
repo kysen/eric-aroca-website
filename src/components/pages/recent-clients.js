@@ -1,7 +1,7 @@
 import React from "react";
 
 const RecentClients = () => {
-  return <div className="recent-client-container">jews</div>;
+  return <div className="recent-client-container">RecentClients page</div>;
 };
 
 export default RecentClients;
