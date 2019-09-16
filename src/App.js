@@ -28,7 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar setTab={setTab} currentContent={currentContent} />
-      <Switch currentContent={currentContent} />
+      <Switch setTab={setTab} currentContent={currentContent} />
       <Footer />
     </div>
   );

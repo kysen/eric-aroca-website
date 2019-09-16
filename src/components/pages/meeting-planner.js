@@ -1,5 +1,5 @@
 import React from "react";
-import MPItem from "./mp-item";
+import MPItem from "./mp-components/mp-item";
 
 // TODO setup contact info links
 

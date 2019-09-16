@@ -58,6 +58,12 @@ const Navbar = props => {
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
+              tab={"corporate"}
+              title={"Corporate Coach"}
+            />
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
               tab={"blog"}
               title={"Blog"}
             />
