@@ -4,7 +4,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import MeetingPlanner from "./pages/meeting-planner";
-import RecentClients from "./pages/recent-clients";
+import KeynoteSpeaker from "./pages/keynote-speaker";
 import Blog from "./pages/blog";
 
 const Switch = props => {
@@ -17,8 +17,8 @@ const Switch = props => {
       setSwitch(<Contact />);
     } else if (props.currentContent === "meetingPlanner") {
       setSwitch(<MeetingPlanner />);
-    } else if (props.currentContent === "recentClients") {
-      setSwitch(<RecentClients />);
+    } else if (props.currentContent === "keynote") {
+      setSwitch(<KeynoteSpeaker />);
     } else if (props.currentContent === "blog") {
       setSwitch(<Blog />);
     } else {

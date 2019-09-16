@@ -1,4 +1,5 @@
 .meeting-container {
+  margin-top: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -29,6 +30,7 @@
         height: 100px;
         display: flex;
         font-size: 1.2em;
+        padding-bottom: 20px;
 
         .item-title {
           font-weight: 600;
@@ -42,6 +44,14 @@
         .item-content {
           display: flex;
           text-align: left;
+          flex-direction: column;
+
+          div {
+            display: list-item;
+            list-style-type: circle;
+
+            margin-left: 30px;
+          }
         }
       }
     }

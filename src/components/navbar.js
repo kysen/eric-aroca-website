@@ -1,8 +1,9 @@
 import React from "react";
 
-import ericLogo from "../images/logos/ltl-eric-aroca.png";
+import NavbarTab from "./navbar-tab";
+import NavbarSocial from "./navbar-socialmedia-link";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ericLogo from "../images/logos/ltl-eric-aroca.png";
 
 const Navbar = props => {
   return (
@@ -11,94 +12,55 @@ const Navbar = props => {
         <img className="navbar-logo" src={ericLogo} alt="" />
         <div className="navbar-right">
           <div className="social-media-links-wrapper">
-            <div
-              className="social-media-link"
-              onClick={() =>
-                (window.location = "https://www.facebook.com/earoca1")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "facebook-f"]} />
-            </div>
-            <div
-              className="social-media-link"
-              onClick={() =>
-                (window.location = "https://twitter.com/arocaeric")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
-            </div>
-            <div
-              className="social-media-link"
-              onClick={() =>
-                (window.location =
-                  "https://www.instagram.com/ericarocalivethelife")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "instagram"]} />
-            </div>
-            <div
-              className="social-media-link"
-              onClick={() =>
-                (window.location = "https://www.pinterest.com/earoca15/")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "pinterest"]} />
-            </div>
-            <div
-              className="social-media-link"
-              onClick={() =>
-                (window.location =
-                  "https://www.youtube.com/channel/UCSKT4yb1nV5YTK_AauaeC_A")
-              }
-            >
-              <FontAwesomeIcon icon={["fab", "youtube"]} />
-            </div>
+            <NavbarSocial
+              icon="facebook-f"
+              site="https://www.facebook.com/earoca1"
+            />
+            <NavbarSocial icon="twitter" site="https://twitter.com/arocaeric" />
+            <NavbarSocial
+              icon="instagram"
+              site="https://www.instagram.com/ericarocalivethelife"
+            />
+            <NavbarSocial
+              icon="pinterest"
+              site="https://www.pinterest.com/earoca15/"
+            />
+            <NavbarSocial
+              icon="youtube"
+              site="https://www.youtube.com/channel/UCSKT4yb1nV5YTK_AauaeC_A"
+            />
           </div>
           <div className="navbar-tabs">
-            <div
-              className={`navbar-tab-item ${
-                props.currentContent === "home" ? "navbar-tab-item-active" : ""
-              }`}
-              onClick={() => props.setTab("home")}
-            >
-              Home
-            </div>
-            <div
-              className={`navbar-tab-item ${
-                props.currentContent === "about" ? "navbar-tab-item-active" : ""
-              }`}
-              onClick={() => props.setTab("about")}
-            >
-              About
-            </div>
-            <div
-              className={`navbar-tab-item ${
-                props.currentContent === "meetingPlanner"
-                  ? "navbar-tab-item-active"
-                  : ""
-              }`}
-              onClick={() => props.setTab("meetingPlanner")}
-            >
-              Meeting Planner
-            </div>
-            <div
-              className={`navbar-tab-item ${
-                props.currentContent === "recentClients"
-                  ? "navbar-tab-item-active"
-                  : ""
-              }`}
-              onClick={() => props.setTab("recentClients")}
-            >
-              Recent Clients
-            </div>
-            <div
-              className={`navbar-tab-item ${
-                props.currentContent === "blog" ? "navbar-tab-item-active" : ""
-              }`}
-              onClick={() => props.setTab("blog")}
-            >
-              Blog
-            </div>
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
+              tab={"home"}
+              title={"Home"}
+            />
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
+              tab={"about"}
+              title={"About"}
+            />
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
+              tab={"meetingPlanner"}
+              title={"Meeting Planner"}
+            />
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
+              tab={"keynote"}
+              title={"Keynote Speaker"}
+            />
+            <NavbarTab
+              setTab={props.setTab}
+              currentContent={props.currentContent}
+              tab={"blog"}
+              title={"Blog"}
+            />
           </div>
         </div>
       </div>

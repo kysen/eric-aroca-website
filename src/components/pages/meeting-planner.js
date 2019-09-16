@@ -1,6 +1,8 @@
 import React from "react";
 import MPItem from "./mp-item";
 
+// TODO setup contact info links
+
 const MeettingPlanner = () => {
   return (
     <div className="meeting-container">
@@ -20,6 +22,20 @@ const MeettingPlanner = () => {
               "Upon confirming Eric for your event, we will send you a contract complete with presentation detail. Please review, sign and return to us for signature. We will email the countersigned contract."
             }
           />
+          <div className="mpitem-container">
+            <div className="item-title">Audio/Visual Requirements:</div>
+            <div className="item-content">
+              <div>
+                A hand-held lapel cordless microphone. Eric does not use a
+                lectern/podium. If one is present please move it to the side
+              </div>
+              <div>A projector with HDMI for PowerPoint.</div>
+              <div>
+                Eric would like his sound check to take place one hour before
+                the meeting starts.
+              </div>
+            </div>
+          </div>
           <MPItem
             title={"Platform Preference:"}
             content={
