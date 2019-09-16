@@ -10,8 +10,6 @@ import Blog from "./pages/blog";
 const Switch = props => {
   const [switchContent, setSwitch] = useState(<Home setTab={props.setTab} />);
 
-  let setTab = props.setTab;
-
   useEffect(() => {
     if (props.currentContent === "about") {
       setSwitch(<About />);
@@ -24,9 +22,9 @@ const Switch = props => {
     } else if (props.currentContent === "blog") {
       setSwitch(<Blog />);
     } else {
-      setSwitch(<Home setTab={setTab} />);
+      setSwitch(<Home setTab={props.setTab} />);
     }
-  }, [props.currentContent]);
+  }, [props.currentContent, props.setTab]);
 
   return <div className="switch-container">{switchContent}</div>;
 };

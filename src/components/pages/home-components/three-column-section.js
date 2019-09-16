@@ -4,7 +4,7 @@ import book from "../../../images/book/book.png";
 import leftColumnImage from "../../../images/book/left-book.png";
 import rightColumnImage from "../../../images/book/right-book.JPG";
 
-const ThreeColumn = () => {
+const ThreeColumn = props => {
   return (
     <div className="three-column-section">
       <div className="section-title three-column-title">
@@ -12,7 +12,11 @@ const ThreeColumn = () => {
       </div>
       <div className="three-column-wrapper">
         <div className="column-wrapper">
-          <img src={leftColumnImage} alt="Left Column" />
+          <img
+            src={leftColumnImage}
+            alt="Left Column"
+            onClick={() => props.setTab("keynote")}
+          />
 
           <div className="column-title">Keynote Speaker</div>
           <div className="column-paragraph">
@@ -61,7 +65,11 @@ const ThreeColumn = () => {
           </button>
         </div>
         <div className="column-wrapper">
-          <img src={rightColumnImage} alt="Right Column" />
+          <img
+            src={rightColumnImage}
+            alt="Right Column"
+            onClick={() => props.setTab("corporate")}
+          />
           <div className="column-title">Corporate Coach</div>
           <div className="column-paragraph">
             As a Presidents Club Award winner, Eric has performed at elevated

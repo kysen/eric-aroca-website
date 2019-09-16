@@ -67,10 +67,18 @@ const ThreeSlides = () => {
           src={brownSuit}
           alt="silent-vid"
         />
+        <div className="overlapping-text">
+          <div className="overlapping-title">example</div>
+          <div className="overlapping-sub-title">this is example text</div>
+        </div>
       </div>
     );
   };
   const images = [
+    {
+      thumbnail: brownSuit,
+      renderItem: render4
+    },
     {
       thumbnail: stageEric,
       renderItem: render1
@@ -82,10 +90,6 @@ const ThreeSlides = () => {
     {
       thumbnail: americanFlag,
       renderItem: render3
-    },
-    {
-      thumbnail: brownSuit,
-      renderItem: render4
     }
   ];
   return (

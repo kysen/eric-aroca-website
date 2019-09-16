@@ -6,7 +6,7 @@ import DemoVideo from "./home-components/demo-video";
 import ThreeColumn from "./home-components/three-column-section";
 import RCLogos from "./home-components/recient-client-logos";
 
-const Home = () => {
+const Home = props => {
   return (
     <div className="home-container">
       <ThreeSlides />
@@ -17,7 +17,7 @@ const Home = () => {
       <div className="divider">
         <div className="line" />
       </div>
-      <ThreeColumn />
+      <ThreeColumn setTab={props.setTab} />
       <div className="divider">
         <div className="line" />
       </div>
