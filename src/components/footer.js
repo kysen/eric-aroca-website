@@ -22,7 +22,7 @@ const Footer = () => {
               className="contact-icon"
               icon={["fas", "envelope"]}
             />
-            live-thelife@EricAroca.com
+            livethelife@EricAroca.com
           </div>
           {/* <div>meeting planner</div> */}
         </div>

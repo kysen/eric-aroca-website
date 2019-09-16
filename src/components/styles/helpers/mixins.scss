@@ -12,3 +12,13 @@
   font-weight: 600;
   color: $dark-gray;
 }
+
+@mixin page-subtitle {
+  font-size: 1.8em;
+  color: $baby-blue;
+}
+
+@mixin section-title {
+  font-size: 2.8em;
+  margin-bottom: 1em;
+}

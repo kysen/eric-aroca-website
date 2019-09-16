@@ -10,7 +10,7 @@ import Icons from "./helpers/icons";
 
 const App = () => {
   Icons();
-  const [currentContent, setTab] = useState("home");
+  const [currentContent, setTab] = useState("keynote");
   return (
     <div className="App">
       <Navbar setTab={setTab} currentContent={currentContent} />

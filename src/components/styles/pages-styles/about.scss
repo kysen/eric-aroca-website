@@ -17,8 +17,7 @@
       @include page-title;
     }
     .about-subtitle {
-      font-size: 1.8em;
-      color: $baby-blue;
+      @include page-subtitle;
     }
     .about-paragraph-wrapper {
       width: 70%;

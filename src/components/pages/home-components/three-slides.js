@@ -2,10 +2,10 @@ import React from "react";
 
 import ImageGallery from "react-image-gallery";
 
-import stageEric from "../../../images/scrolling-pictures/stage-eric.jpg";
+import stageEric from "../../../images/scrolling-pictures/brown-suit.png";
 import withStudents from "../../../images/scrolling-pictures/with-students.png";
 import americanFlag from "../../../images/scrolling-pictures/american-flag.png";
-import brownSuit from "../../../images/scrolling-pictures/brown-suit.png";
+import brownSuit from "../../../images/scrolling-pictures/brown-suit-7.png";
 
 const ThreeSlides = () => {
   const render1 = () => {
@@ -68,7 +68,7 @@ const ThreeSlides = () => {
           alt="silent-vid"
         />
         <div className="overlapping-text">
-          <div className="overlapping-title">example</div>
+          <div className="overlapping-title">Example Title</div>
           <div className="overlapping-sub-title">this is example text</div>
         </div>
       </div>

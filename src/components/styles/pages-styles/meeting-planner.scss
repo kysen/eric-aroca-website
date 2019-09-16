@@ -15,9 +15,8 @@
         @include page-title;
       }
       .meeting-sub-title {
+        @include page-subtitle;
         width: 80%;
-        color: $baby-blue;
-        font-size: 1.8em;
         font-style: italic;
       }
     }

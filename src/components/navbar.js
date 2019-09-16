@@ -14,16 +14,12 @@ const Navbar = props => {
           <div className="social-media-links-wrapper">
             <NavbarSocial
               icon="facebook-f"
-              site="https://www.facebook.com/earoca1"
+              site="https://www.facebook.com/live.the.life01/"
             />
             <NavbarSocial icon="twitter" site="https://twitter.com/arocaeric" />
             <NavbarSocial
               icon="instagram"
               site="https://www.instagram.com/ericarocalivethelife"
-            />
-            <NavbarSocial
-              icon="pinterest"
-              site="https://www.pinterest.com/earoca15/"
             />
             <NavbarSocial
               icon="youtube"
