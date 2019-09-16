@@ -5,6 +5,7 @@ import ImageGallery from "react-image-gallery";
 import stageEric from "../../../images/scrolling-pictures/stage-eric.jpg";
 import withStudents from "../../../images/scrolling-pictures/with-students.png";
 import americanFlag from "../../../images/scrolling-pictures/american-flag.png";
+import brownSuit from "../../../images/scrolling-pictures/brown-suit.png";
 
 const ThreeSlides = () => {
   const render1 = () => {
@@ -58,6 +59,17 @@ const ThreeSlides = () => {
       </div>
     );
   };
+  const render4 = () => {
+    return (
+      <div className="scrolling-item">
+        <img
+          className="scrolling-item-image"
+          src={brownSuit}
+          alt="silent-vid"
+        />
+      </div>
+    );
+  };
   const images = [
     {
       thumbnail: stageEric,
@@ -70,6 +82,10 @@ const ThreeSlides = () => {
     {
       thumbnail: americanFlag,
       renderItem: render3
+    },
+    {
+      thumbnail: brownSuit,
+      renderItem: render4
     }
   ];
   return (
