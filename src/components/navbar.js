@@ -57,12 +57,12 @@ const Navbar = props => {
               tab={"corporate"}
               title={"Corporate Coach"}
             />
-            <NavbarTab
+            {/* <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"blog"}
               title={"Blog"}
-            />
+            /> */}
           </div>
         </div>
       </div>

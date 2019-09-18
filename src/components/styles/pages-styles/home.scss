@@ -200,3 +200,18 @@
 .modal-video-body {
   max-width: 70%;
 }
+
+@media (max-width: 1200px) {
+  .home-container {
+    .three-column-section {
+      .three-column-wrapper {
+        width: 90%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .home-container {
+    color: red;
+  }
+}
