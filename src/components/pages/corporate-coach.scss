@@ -1,0 +1,35 @@
+.corporate-coach-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .corporate-coach-title {
+    @include page-title;
+    margin-top: 60px;
+  }
+  .corporate-subtitle {
+    @include page-subtitle;
+    width: 70%;
+    font-style: italic;
+  }
+  .courses-title {
+    @include section-title;
+    font-size: 2em;
+  }
+  .training-container {
+    width: 70%;
+    .course-wrapper {
+      .course-title {
+        @include page-subtitle;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .course-text {
+        font-size: 1.3em;
+        width: 80%;
+        text-align: left;
+        margin-left: 3em;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

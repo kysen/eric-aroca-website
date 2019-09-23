@@ -47,28 +47,28 @@
       }
     }
   }
-  .testimonials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .key-section-title {
-      @include section-title;
+  .testimonial-section-title {
+    @include section-title;
+  }
+  .testimonial-wrapper {
+    width: 50%;
+    font-size: 1.4em;
+
+    .testimonial-text {
+      text-align: left;
+      font-style: italic;
     }
-    .testimonial-wrapper {
-      width: 50%;
-      font-size: 1.4em;
-
-      .testimonial-text {
-        text-align: left;
-        font-style: italic;
-      }
-      .testimonial-writer {
-        margin: 20px;
-        text-align: right;
-        color: $baby-blue;
-        font-style: italic;
-      }
+    .testimonial-writer {
+      margin: 20px;
+      text-align: right;
+      color: $baby-blue;
+      font-style: italic;
     }
   }
 }

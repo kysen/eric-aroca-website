@@ -16,7 +16,9 @@ const KeynoteSpeaker = () => {
         <div className="line" />
       </div>
       <div className="testimonials-container">
-        <div className="key-section-title">Keynote Testimonials</div>
+        <div className="testimonial-section-title">
+          Keynote Speaking Testimonials
+        </div>
         <Testimonial
           who="- Kimberly Brenneman, Utah Business Licensing Association"
           content="''Our members were inspired and engaged throughout the entire keynote. Mr. Aroca’s message provided practical advice and important life lessons that attendees could apply immediately to their lives. It is very apparent that Mr. Aroca cares genuinely, as he stayed after to shake hands, autograph books, and connect with every member that wanted to speak to him.''"

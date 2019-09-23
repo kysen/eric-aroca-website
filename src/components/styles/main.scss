@@ -3,13 +3,14 @@
 @import "node_modules/react-modal-video/scss/modal-video.scss";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
-@import "./app.scss";
+@import "../../app.scss";
 
-@import "./navigation-styles/navbar.scss";
-@import "./navigation-styles/footer.scss";
-@import "./navigation-styles/switch.scss";
+@import "../navbar.scss";
+@import "../footer.scss";
+@import "../switch.scss";
 
-@import "./pages-styles/home.scss";
-@import "./pages-styles/about.scss";
-@import "./pages-styles/meeting-planner.scss";
-@import "./pages-styles/keynote-speaker.scss";
+@import "../pages/home.scss";
+@import "../pages/about.scss";
+@import "../pages/meeting-planner.scss";
+@import "../pages/keynote-speaker.scss";
+@import "../pages/corporate-coach.scss";

@@ -246,6 +246,16 @@
         }
       }
     }
+    .demo-video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .demo-video-section {
+        img {
+          height: 500px;
+        }
+      }
+    }
     .three-column-section {
       .three-column-wrapper {
         display: flex;
