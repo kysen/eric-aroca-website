@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-import headShot from "../../../images/self-pictures/headshot-large.jpg";
+import headShotSquare from "../../../images/self-pictures/headshot-square.png";
 
 const DemoVideo = () => {
   const [youtubeOpen, setYoutubeOpen] = useState(false);
@@ -9,7 +9,7 @@ const DemoVideo = () => {
   return (
     <div className="demo-video-container">
       <div className="demo-video-section">
-        <img src={headShot} alt="head-shot" />
+        <img src={headShotSquare} alt="head-shot" />
         <div
           className="watch-video-button"
           onClick={() => setYoutubeOpen(true)}
