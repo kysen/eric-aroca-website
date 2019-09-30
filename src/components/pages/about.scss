@@ -2,7 +2,8 @@
   display: flex;
 
   img {
-    height: 100vh;
+    // height: 100vh;
+    width: 60%;
   }
 
   .about-content-wrapper {
@@ -20,7 +21,7 @@
       @include page-subtitle;
     }
     .about-paragraph-wrapper {
-      width: 70%;
+      width: 80%;
       .about-paragraph {
         font-size: 1.3em;
         margin-top: 10px;

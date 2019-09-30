@@ -1,6 +1,6 @@
 import React from "react";
 
-import ericHeadshot from "../../images/self-pictures/headshot-large.jpg";
+import ericHeadshot from "../../images/self-pictures/family-pic.JPG";
 
 const About = () => {
   return (

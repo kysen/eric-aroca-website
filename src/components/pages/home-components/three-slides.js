@@ -3,9 +3,8 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 
 import stageEric from "../../../images/scrolling-pictures/brown-suit.png";
-import withStudents from "../../../images/scrolling-pictures/with-students.png";
+import behindStage from "../../../images/scrolling-pictures/behind-stage2.png";
 import americanFlag from "../../../images/scrolling-pictures/american-flag.png";
-import brownSuit from "../../../images/scrolling-pictures/brown-suit-7.png";
 
 const ThreeSlides = () => {
   const render1 = () => {
@@ -30,7 +29,7 @@ const ThreeSlides = () => {
       <div className="scrolling-item">
         <img
           className="scrolling-item-image"
-          src={withStudents}
+          src={behindStage}
           alt="silent-vid"
         />
         <div className="overlapping-text">
@@ -59,36 +58,14 @@ const ThreeSlides = () => {
       </div>
     );
   };
-  const render4 = () => {
-    return (
-      <div className="scrolling-item">
-        <img
-          className="scrolling-item-image"
-          src={brownSuit}
-          alt="silent-vid"
-        />
-        <div className="overlapping-text">
-          <div className="overlapping-title">Example Title</div>
-          <div className="overlapping-sub-title">this is example text</div>
-        </div>
-      </div>
-    );
-  };
   const images = [
     {
-      thumbnail: brownSuit,
-      renderItem: render4
-    },
-    {
-      thumbnail: stageEric,
       renderItem: render1
     },
     {
-      thumbnail: withStudents,
       renderItem: render2
     },
     {
-      thumbnail: americanFlag,
       renderItem: render3
     }
   ];
