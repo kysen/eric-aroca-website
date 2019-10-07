@@ -13,11 +13,10 @@ const About = () => {
         {/* TODO */}
         <div className="about-paragraph-wrapper">
           <div className="about-paragraph">
-            Eric is an Author, award winning speaker, master storyteller and
-            corporate trainer. Eric is helping organizations and individual to
-            have a purpose driven approach to create a culture that will
-            encourage leadership, personal development and inspire them to live
-            the life they have always imagined.{" "}
+            Eric is helping organizations and individual to have a purpose
+            driven approach to create a culture that will encourage leadership,
+            personal development and inspire them to live the life they have
+            always imagined.{" "}
           </div>
 
           <div className="about-paragraph">
