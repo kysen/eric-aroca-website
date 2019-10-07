@@ -1,0 +1,3 @@
+from = "https://https://eric-aroca.netlify.com//*"
+to = "https://ericaroca.com/:splat"
+force = true
