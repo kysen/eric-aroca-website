@@ -33,3 +33,29 @@
     }
   }
 }
+@media (max-width: 750px) {
+  .corporate-coach-container {
+    .corporate-coach-title {
+    }
+    .corporate-subtitle {
+    }
+    .courses-title {
+    }
+    .training-container {
+      .course-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .course-title {
+          text-align: center;
+        }
+        .course-text {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}

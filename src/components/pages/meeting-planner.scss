@@ -26,7 +26,6 @@
       align-items: flex-start;
 
       .mpitem-container {
-        height: 100px;
         display: flex;
         font-size: 1.2em;
         padding-bottom: 20px;
@@ -50,6 +49,45 @@
             list-style-type: circle;
 
             margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .meeting-container {
+    .meeting-wrapper {
+      width: 90%;
+      .items-wrapper {
+        .mpitem-container {
+          .item-title {
+            width: 200px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .meeting-container {
+    .meeting-wrapper {
+      .items-wrapper {
+        display: flex;
+        align-items: center;
+        .mpitem-container {
+          width: 90%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .item-title {
+            width: auto;
+            padding-right: 0;
+            padding-bottom: 10px;
           }
         }
       }

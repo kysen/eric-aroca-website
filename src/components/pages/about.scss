@@ -1,8 +1,8 @@
 .about-container {
   display: flex;
+  align-items: center;
 
   img {
-    // height: 100vh;
     width: 60%;
   }
 
@@ -27,6 +27,16 @@
         margin-top: 10px;
         color: $dark-gray;
       }
+    }
+  }
+}
+@media (max-width: 1610px) {
+  .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    img {
+      width: 100%;
     }
   }
 }
