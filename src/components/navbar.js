@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import NavbarTab from "./navbar-tab";
 import NavbarSocial from "./navbar-socialmedia-link";
 
 import ericLogo from "../images/logos/ltl-eric-aroca.png";
 
+import { withRouter } from "react-router-dom";
+
 const Navbar = props => {
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    console.log("test", contentRef.current);
+  }, [contentRef, props.location.pathname]);
+
   return (
-    <div className="navbar-container">
+    <div ref={contentRef} className="navbar-container">
       <div className="navbar-wrapper">
         <img className="navbar-logo" src={ericLogo} alt="" />
         <div className="navbar-right">
@@ -77,4 +88,4 @@ const Navbar = props => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);

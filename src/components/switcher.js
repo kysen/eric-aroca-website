@@ -18,24 +18,6 @@ const Routes = {
 };
 
 const Switcher = props => {
-  // const [switchContent, setSwitch] = useState(<Home setTab={props.setTab} />);
-
-  // useEffect(() => {
-  //   if (props.currentContent === "about") {
-  //     setSwitch(<About />);
-  //   } else if (props.currentContent === "meetingPlanner") {
-  //     setSwitch(<MeetingPlanner />);
-  //   } else if (props.currentContent === "keynote") {
-  //     setSwitch(<KeynoteSpeaker />);
-  //   } else if (props.currentContent === "corporate") {
-  //     setSwitch(<CorporateCoach />);
-  //   } else if (props.currentContent === "blog") {
-  //     setSwitch(<Blog />);
-  //   } else {
-  //     setSwitch(<Home setTab={props.setTab} />);
-  //   }
-  // }, [props.currentContent, props.setTab]);
-
   return (
     <div className="switch-container">
       <Switch>
