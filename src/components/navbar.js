@@ -31,36 +31,43 @@ const Navbar = props => {
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"home"}
+              url="/"
               title={"Home"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"about"}
+              url="/about-eric"
               title={"About"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"meetingPlanner"}
+              url="/meeting-planner"
               title={"Meeting Planner"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"keynote"}
+              url="/keynote-speaker"
               title={"Keynote Speaker"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"corporate"}
+              url="/corporate-coach"
               title={"Corporate Coach"}
             />
             {/* <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"blog"}
+              url="/blog-posts"
+
               title={"Blog"}
             /> */}
           </div>

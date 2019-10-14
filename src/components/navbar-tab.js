@@ -1,15 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NavbarTab = props => {
   return (
-    <div
-      className={`navbar-tab-item ${
-        props.currentContent === props.tab ? "navbar-tab-item-active" : ""
-      }`}
-      onClick={() => props.setTab(props.tab)}
+    <NavLink
+      className="navbar-tab-item"
+      activeClassName="navbar-tab-item-active"
+      exact
+      to={props.url}
     >
       {props.title}
-    </div>
+    </NavLink>
   );
 };
 

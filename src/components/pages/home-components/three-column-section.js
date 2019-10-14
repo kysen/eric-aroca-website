@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import book from "../../../images/book/book.png";
 import leftColumnImage from "../../../images/book/left-book.png";
@@ -11,12 +12,8 @@ const ThreeColumn = props => {
         "Why is Eric Aroca the leading voice on building culture?"
       </div>
       <div className="three-column-wrapper">
-        <div className="column-wrapper">
-          <img
-            src={leftColumnImage}
-            alt="Left Column"
-            onClick={() => props.setTab("keynote")}
-          />
+        <NavLink className="column-wrapper" to="/keynote-speaker">
+          <img src={leftColumnImage} alt="Left Column" />
 
           <div className="column-title">Keynote Speaker</div>
           <div className="column-paragraph">
@@ -27,7 +24,7 @@ const ThreeColumn = props => {
             audience. His entertaining and motivating style will inspire your
             group to live the life they have always imagined.
           </div>
-        </div>
+        </NavLink>
         <div className="column-wrapper">
           <img
             src={book}
@@ -64,12 +61,8 @@ const ThreeColumn = props => {
             Buy the Book!
           </button>
         </div>
-        <div className="column-wrapper">
-          <img
-            src={rightColumnImage}
-            alt="Right Column"
-            onClick={() => props.setTab("corporate")}
-          />
+        <NavLink className="column-wrapper" to="/corporate-coach">
+          <img src={rightColumnImage} alt="Right Column" />
           <div className="column-title">Corporate Coach</div>
           <div className="column-paragraph">
             As a Presidents Club Award winner, Eric has performed at elevated
@@ -77,7 +70,7 @@ const ThreeColumn = props => {
             industries. He has had the opportunity to speak and train audiences
             around the world.
           </div>
-        </div>
+        </NavLink>
       </div>
     </div>
   );

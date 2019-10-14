@@ -71,6 +71,8 @@
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 40px;
       .column-wrapper {
+        text-decoration: none;
+        color: black;
         img {
           cursor: pointer;
 
@@ -100,6 +102,10 @@
           text {
             cursor: pointer;
             color: $baby-blue;
+
+            &:hover {
+              text-decoration: underline;
+            }
 
             &:active {
               color: $darker-baby-blue;

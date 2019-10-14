@@ -45,6 +45,7 @@
         justify-content: space-around;
         .navbar-tab-item {
           @include no-highlight();
+          text-decoration: none;
           border-radius: 2px;
           cursor: pointer;
           padding: 1em;

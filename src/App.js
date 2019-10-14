@@ -1,20 +1,24 @@
 import React, { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+
 import "./components/styles/main.scss";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
-import Switch from "./components/switch";
+import Switcher from "./components/switcher";
 
 import Icons from "./helpers/icons";
 
 const App = () => {
   Icons();
-  const [currentContent, setTab] = useState("home");
+  // const [currentContent, setTab] = useState("home");
   return (
     <div className="App">
-      <Navbar setTab={setTab} currentContent={currentContent} />
-      <Switch setTab={setTab} currentContent={currentContent} />
+      <BrowserRouter>
+        <Navbar />
+        <Switcher />
+      </BrowserRouter>
       <Footer />
     </div>
   );
