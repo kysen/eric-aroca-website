@@ -8,8 +8,9 @@ const KeynoteSpeaker = () => {
     <div className="keynote-speaker-container">
       <div className="keynote-speaker-title">Keynote Speaker</div>
       <div className="keynote-subtitle">
-        - Below is a list of talks that Eric provides on the topic of Keynote
-        Speaking -
+        Eric is the perfect choice for your conference, corporate event and
+        executive style functions. Eric’s humor, insight, and storytelling
+        skills will captivate your people.
       </div>
       <KeynoteSpeakerOptions />
       <div className="divider">

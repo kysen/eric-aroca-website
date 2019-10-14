@@ -40,7 +40,7 @@ const KeynoteSpeakerOptions = () => {
           </div>
         </div>
       </div>
-      <div className="option-container">
+      {/* <div className="option-container">
         <div className="option-title">When You Fall, Fall Forward</div>
         <div className="option-subtitle">
           Prepare yourself today for the unforeseen opportunities of tomorrow.
@@ -70,7 +70,7 @@ const KeynoteSpeakerOptions = () => {
             mindset into your organization today – book Eric Aroca.
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="option-container">
         <div className="option-title">Live Your Life by an Ethos</div>

@@ -13,13 +13,6 @@ const About = () => {
         {/* TODO */}
         <div className="about-paragraph-wrapper">
           <div className="about-paragraph">
-            Eric is helping organizations and individual to have a purpose
-            driven approach to create a culture that will encourage leadership,
-            personal development and inspire them to live the life they have
-            always imagined.{" "}
-          </div>
-
-          <div className="about-paragraph">
             Everyone has a story to tell. What sets Eric Aroca apart from the
             rest is an ability to weave inspiration into attention-grabbing
             speeches that are nothing short of a verbal joyride. Eric uses
