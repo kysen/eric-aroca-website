@@ -2,9 +2,9 @@ import React from "react";
 
 import ImageGallery from "react-image-gallery";
 
-import stageEric from "../../../images/scrolling-pictures/brown-suit.png";
-import behindStage from "../../../images/scrolling-pictures/behind-stage2.png";
-import americanFlag from "../../../images/scrolling-pictures/american-flag.png";
+import stageEric from "../../../images/scrolling-pictures-1893x728/brown-suit.png";
+import behindStage from "../../../images/scrolling-pictures-1893x728/behind-stage2.png";
+import americanFlag from "../../../images/scrolling-pictures-1893x728/american-flag.png";
 
 const ThreeSlides = () => {
   const render1 = () => {
