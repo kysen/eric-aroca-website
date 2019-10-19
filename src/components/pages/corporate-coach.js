@@ -23,10 +23,7 @@ const CorporateCoach = () => {
       <div className="divider">
         <div className="line" />
       </div>
-      <div className="courses-title">
-        - Below is a list of talks that Eric provides on the topic of Corporate
-        Coaching -
-      </div>
+      <div className="courses-title">Topics:</div>
       <TrainingCourses />
       <div className="divider">
         <div className="line" />
