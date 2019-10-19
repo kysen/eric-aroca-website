@@ -1,4 +1,5 @@
 import React from "react";
+import Linkify from "react-linkify";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -10,6 +11,7 @@ const Footer = () => {
       <div className="contact-info-wrapper">
         <div className="contact-left">
           <div
+            // className="contact-item"
             onClick={() => {
               navigator.clipboard.writeText("8013685266");
             }}
@@ -17,13 +19,15 @@ const Footer = () => {
             <FontAwesomeIcon className="contact-icon" icon={["fas", "phone"]} />
             801-368-5266
           </div>
-          <div>
-            <FontAwesomeIcon
-              className="contact-icon"
-              icon={["fas", "envelope"]}
-            />
-            livethelife@EricAroca.com
-          </div>
+          <Linkify>
+            <div className="contact-item">
+              <FontAwesomeIcon
+                className="contact-icon"
+                icon={["fas", "envelope"]}
+              />
+              livethelife@EricAroca.com
+            </div>
+          </Linkify>
           {/* <div>meeting planner</div> */}
         </div>
 
