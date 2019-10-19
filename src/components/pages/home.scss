@@ -15,11 +15,17 @@
         font-weight: 200;
         display: flex;
         flex-direction: column;
-        height: 100px;
+        height: 100%;
+        width: 90%;
         .overlapping-title {
-          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
           font-size: 5em;
           text-shadow: -4px 5px black;
+          max-width: 90vw;
+          padding: 20px;
         }
         .overlapping-sub-title {
           margin-top: 10px;
@@ -233,6 +239,9 @@
     .recent-clients-section {
       .logo-wrapper {
         width: 90%;
+        .logo {
+          max-width: 100%;
+        }
       }
     }
   }
