@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import NavbarTab from "./navbar-tab";
 import NavbarSocial from "./navbar-socialmedia-link";
 
-import ericLogo from "../images/logos/ltl-eric-aroca.png";
+import ericLogo from "../images/logos/ealogo.png";
 
 import { withRouter } from "react-router-dom";
 
