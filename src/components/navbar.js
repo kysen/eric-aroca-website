@@ -49,28 +49,28 @@ const Navbar = props => {
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"about"}
-              url="/about-eric"
+              url="/about-eric/"
               title={"About"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"meetingPlanner"}
-              url="/meeting-planner"
+              url="/meeting-planner/"
               title={"Meeting Planner"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"keynote"}
-              url="/keynote-speaker"
+              url="/keynote-speaker/"
               title={"Keynote Speaker"}
             />
             <NavbarTab
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"corporate"}
-              url="/corporate-coach"
+              url="/corporate-coach/"
               title={"Corporate Coach"}
             />
             {/* <NavbarTab
