@@ -77,8 +77,7 @@ const Navbar = props => {
               setTab={props.setTab}
               currentContent={props.currentContent}
               tab={"blog"}
-              url="/blog-posts"
-
+              url="/blog-posts/"
               title={"Blog"}
             /> */}
           </div>

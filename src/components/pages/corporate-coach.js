@@ -10,20 +10,16 @@ const CorporateCoach = () => {
         Corporate Culture Coach & Consultant
       </div>
       <div className="corporate-subtitle">
-        Leadership and communication are the founding principles to building a
-        culture that lasts. As a sought-after corporate coach – Eric has helped
-        educational institutions and corporations build organizational cultures
-        that last. Eric has worked with organizations to develop their values,
-        mission statements, vision statement and to communicate these beliefs
-        with clarity. Eric has coached fortune 500 companies and associations
-        representing diverse industries. He has delivered speeches and training
-        courses in over ten countries and his experience has made him a master
-        of his craft.
+        Eric Aroca accepts coaching and consulting assignments with leaders and
+        organizations that wish to see their organization culture come to life.
+        Eric brings his passion and expertise to the clients he accepts.
       </div>
       <div className="divider">
         <div className="line" />
       </div>
-      <div className="courses-title">Topics:</div>
+      <div className="courses-title">
+        Eric's areas of focus for Coaching and Consulting include:
+      </div>
       <TrainingCourses />
       <div className="divider">
         <div className="line" />
