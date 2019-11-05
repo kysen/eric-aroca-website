@@ -8,7 +8,7 @@ const About = () => {
       <img src={ericHeadshot} alt="eric headshot" />
       <div className="about-content-wrapper">
         <div className="about-title">Eric Aroca</div>
-        <div className="about-subtitle">- Motivational Speaker -</div>
+        {/* <div className="about-subtitle">- Motivational Speaker -</div> */}
 
         {/* TODO */}
         <div className="about-paragraph-wrapper">
