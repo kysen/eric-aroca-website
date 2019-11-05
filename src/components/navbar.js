@@ -14,7 +14,7 @@ const Navbar = props => {
     if (contentRef.current) {
       contentRef.current.scrollIntoView({ behavior: "smooth" });
     }
-    console.log("test", contentRef.current);
+    // console.log("test", contentRef.current);
   }, [contentRef, props.location.pathname]);
 
   return (

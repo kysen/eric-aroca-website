@@ -30,6 +30,9 @@
       .contact-item {
         transition: 0.3s ease-in-out;
         margin-top: 4px;
+
+        display: flex;
+        align-items: center;
         a {
           transition: 0.3s ease-in-out;
           color: rgb(206, 206, 206);

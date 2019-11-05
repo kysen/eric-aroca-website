@@ -17,7 +17,7 @@
 
     .navbar-logo {
       @include no-highlight();
-      width: 440px;
+      width: 380px;
       padding: 20px;
     }
     .navbar-right {
@@ -39,7 +39,6 @@
           transition: 0.3s ease-in-out;
           &:hover {
             color: $baby-blue;
-            font-size: 1.1em;
           }
         }
       }

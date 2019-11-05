@@ -11,7 +11,6 @@ const Footer = () => {
       <div className="contact-info-wrapper">
         <div className="contact-left">
           <div
-            // className="contact-item"
             onClick={() => {
               navigator.clipboard.writeText("8013685266");
             }}
@@ -25,7 +24,7 @@ const Footer = () => {
                 className="contact-icon"
                 icon={["fas", "envelope"]}
               />
-              livethelife@EricAroca.com
+              <div>livethelife@EricAroca.com</div>
             </div>
           </Linkify>
           {/* <div>meeting planner</div> */}

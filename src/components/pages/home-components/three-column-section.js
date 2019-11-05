@@ -14,7 +14,6 @@ const ThreeColumn = props => {
       <div className="three-column-wrapper">
         <NavLink className="column-wrapper" to="/keynote-speaker">
           <img src={leftColumnImage} alt="Left Column" />
-
           <div className="column-title">Keynote Speaker</div>
           <div className="column-paragraph">
             Everyone has a story to tell. What sets Eric Aroca apart from the
