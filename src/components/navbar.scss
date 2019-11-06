@@ -10,15 +10,15 @@
 
   .navbar-wrapper {
     width: 90%;
+
     display: flex;
     justify-content: space-between;
-    // align-items: stretch;
-    height: 100%;
+    align-items: stretch;
 
     .navbar-logo {
       @include no-highlight();
+      object-fit: contain;
       width: 440px;
-      height: auto;
       padding: 20px;
     }
     .navbar-right {
@@ -26,6 +26,7 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: space-between;
+      height: 100%;
 
       .social-media-links-wrapper {
         display: grid;
@@ -47,7 +48,7 @@
         display: flex;
         padding-top: 1em;
         grid-template-columns: repeat(5, 1fr);
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-around;
         .navbar-tab-item {
           @include no-highlight();
@@ -78,6 +79,7 @@
     .navbar-wrapper {
       display: flex;
       flex-direction: column;
+      align-items: center;
       .navbar-logo {
         margin: 40px;
       }
@@ -101,17 +103,14 @@
 }
 @media (max-width: 850px) {
   .navbar-container {
-    .navbar-right {
-      .navbar-tabs {
-        display: flex;
-        flex-direction: column;
-
-        .navbar-tab-item {
-          font-size: 3em;
-          color: red;
-          &:hover {
-            background-color: white;
-            color: red;
+    .navbar-wrapper {
+      .navbar-right {
+        .navbar-tabs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .navbar-tab-item {
+            font-size: 1.2em;
           }
         }
       }
