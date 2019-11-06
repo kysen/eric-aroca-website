@@ -15,8 +15,9 @@
 
     .navbar-logo {
       @include no-highlight();
-      object-fit: contain;
       width: 440px;
+      height: 95px;
+      object-fit: contain;
       padding: 20px;
     }
     .navbar-right {
