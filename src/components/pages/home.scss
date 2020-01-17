@@ -6,8 +6,6 @@
       align-items: center;
       .scrolling-item-image {
         width: 100%;
-        // filter: blur(4px);
-        // -webkit-filter: blur(4px);
       }
       .overlapping-text {
         position: absolute;
@@ -250,6 +248,9 @@
   .home-container {
     .scrolling-items-wrapper {
       .scrolling-item {
+        .scrolling-item-image {
+          width: 100vw;
+        }
         .overlapping-text {
           align-items: center;
           justify-content: center;
@@ -268,9 +269,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100vw;
       .demo-video-section {
         img {
-          height: 500px;
+          width: 100vw;
+          height: auto;
         }
       }
     }

@@ -102,6 +102,11 @@
 @media (max-width: 850px) {
   .navbar-container {
     .navbar-wrapper {
+      .navbar-logo {
+        width: 100vw;
+        padding-right: 0;
+        padding-left: 0;
+      }
       .navbar-right {
         .navbar-tabs {
           display: flex;
